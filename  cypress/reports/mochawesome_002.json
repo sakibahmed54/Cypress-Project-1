@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-01T13:38:26.185Z",
+    "end": "2025-04-01T13:38:46.646Z",
+    "duration": 20461,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9c43c259-b1ab-41a5-96a5-11605beb7def",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pomdemo.cy.js",
+      "file": "cypress\\e2e\\pomdemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "LoginTest with invalid password",
+          "fullTitle": "LoginTest with invalid password",
+          "timedOut": null,
+          "duration": 6198,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+          "err": {},
+          "uuid": "a3029dec-388d-4e17-b389-cec2203a4f8e",
+          "parentUUID": "9c43c259-b1ab-41a5-96a5-11605beb7def",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "a915ff91-8e35-45a1-96f9-9867921e26c1",
+          "title": "All Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "LoginTestWith valid credentials",
+              "fullTitle": "All Login Test LoginTestWith valid credentials",
+              "timedOut": null,
+              "duration": 5115,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {},
+              "uuid": "eff817dc-3e33-4754-8d12-ab6cae2278ac",
+              "parentUUID": "a915ff91-8e35-45a1-96f9-9867921e26c1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "LoginTest with invalid username",
+              "fullTitle": "All Login Test LoginTest with invalid username",
+              "timedOut": null,
+              "duration": 5323,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {},
+              "uuid": "559750c0-6388-4199-b018-802067233576",
+              "parentUUID": "a915ff91-8e35-45a1-96f9-9867921e26c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eff817dc-3e33-4754-8d12-ab6cae2278ac",
+            "559750c0-6388-4199-b018-802067233576"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10438,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [
+        "a3029dec-388d-4e17-b389-cec2203a4f8e"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 6198,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": " cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-01T13:38:59.856Z",
+    "end": "2025-04-01T13:39:10.887Z",
+    "duration": 11031,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8713b8f6-114f-4f3f-8c4f-6cbf6c2954e4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test1.cy.js",
+      "file": "cypress\\e2e\\test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google Search",
+          "fullTitle": "Google Search",
+          "timedOut": null,
+          "duration": 8133,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://www.google.com/');\ncy.get('#APjFqb').type('Automation step by step{Enter}');\n// cy.contains('Google Search').click()\ncy.get('[data-hveid=\"CBgQAA\"] > .nPDzT > .YmvwI');",
+          "err": {
+            "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+            "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at onload (https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DAutomation%2Bstep%2Bby%2Bstep%26sca_esv%3D94c74ca6f52d2cb2%26source%3Dhp%26ei%3Dc-zrZ5fnLr7R2roP9fjCoQs%26iflsig%3DACkRmUkAAAAAZ-v6g4eOtVGjiVdvvCuL4_f_BrB4Xnrf%26ved%3D0ahUKEwjX7OXF-raMAxW-qFYBHXW8MLQQ4dUDCA4%26uact%3D5%26oq%3DAutomation%2Bstep%2Bby%2Bstep%26gs_lp%3DEgdnd3Mtd2l6IhdBdXRvbWF0aW9uIHN0ZXAgYnkgc3RlcEi2BVAAWJgFcAB4AJABAJgBAKABAKoBALgBA8gBAPgBAZgCAKACAJgDAJIHAKAHAA%26sclient%3Dgws-wiz%26sei%3Dd-zrZ8T0GpSO4-EP7-WgIA&q=EgSQMG0cGPjYr78GIjB-wU-jeO15UgtUCf1fX5qpu2vhlOcdOE8j_tBPjubfRHyOBfnrc3T_b0K8ou45ZQIyAnJSWgFD:4:316)",
+            "diff": null
+          },
+          "uuid": "bc728ac1-5ef0-45e5-8050-0bad66bd567a",
+          "parentUUID": "8713b8f6-114f-4f3f-8c4f-6cbf6c2954e4",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "bc728ac1-5ef0-45e5-8050-0bad66bd567a"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 8133,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": " cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
